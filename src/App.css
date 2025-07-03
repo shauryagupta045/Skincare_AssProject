@@ -1,0 +1,142 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensuring smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  height: 100%;  /* Ensure the document takes up full height */
+}
+
+/* Ensuring the body occupies full height and applies background correctly */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #2D3B36;
+  background-color: #FEFFF4;
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  min-height: 100vh;  /* Ensure body takes full height of viewport */
+}
+
+/* App wrapper ensures full height */
+.App {
+  min-height: 100vh;
+  position: relative;
+  background-color: #FEFFF4;  /* Ensure the background stays consistent */
+}
+
+/* Main content will be layered correctly */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5DC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9CAF88;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7A8B6B;
+}
+
+/* Focus outline for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #9CAF88;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsive typography */
+@media (max-width: 768px) {
+  .text-9xl {
+    font-size: 4rem;
+  }
+
+  .text-8xl {
+    font-size: 3.5rem;
+  }
+
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+
+  .text-5xl {
+    font-size: 2rem;
+  }
+
+  .text-4xl {
+    font-size: 1.75rem;
+  }
+}
+
+/* Animation utilities for smooth transitions */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+/* Prevent text selection on decorative elements */
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Ensuring images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent pointer events during loading state */
+.loading {
+  pointer-events: none;
+}
+
+/* Reveal animation for elements */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Prevent overflow issues */
+html, body {
+  overflow-x: hidden;  /* Ensure there's no horizontal overflow */
+}
+
