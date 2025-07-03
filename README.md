@@ -2,7 +2,6 @@
 
 A beautiful, responsive skincare e-commerce website built with React and modern web technologies. The website features smooth animations, a modern UI design, and a focus on user experience.
 
-![Skincare Website Screenshot](./src/assets/girl.png)
 
 ## ✨ Features
 
@@ -36,7 +35,7 @@ A beautiful, responsive skincare e-commerce website built with React and modern 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/shauryagupta045/skincare-website.git
+git clone https://github.com/shauryagupta045/Skincare_AssProject
 cd skincare-website
 ```
 
